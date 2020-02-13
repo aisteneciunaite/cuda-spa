@@ -1,0 +1,7 @@
+form {
+    input::placeholder::after {
+    content:" *";
+    color: red;
+    visibility: visible;
+}
+}

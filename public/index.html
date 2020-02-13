@@ -6,15 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header class="theme1">
-        <div class="container text-light">
+        <div class="container-lg d-flex justify-content-between align-items-center">
             <div class="logo-container">
-                <span>Cuda</span>
+                <img src="/public/assets/icons/logo.jpg" alt="">
             </div>
             <nav class="top-nav">
-                <ul class="nav list-unstyled justify-content-end">
+                <div class="mobile-menu justify-content-end">
+                    <i class="material-icons">menu</i>
+                </div>
+                <ul class="nav list-unstyled justify-content-end closed">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
@@ -27,8 +32,8 @@
     <main>
         <section class="hello theme1">
             <div class="container-lg text-center">
-                <div class="wrapper">
-                    <h1>Hello there! We are the new kids on the block and we build awesome websites and mobile apps.</h1>
+                <div>
+                    <h1>Hi there! We are the new kids on the block<br>and we build awesome websites and mobile apps.</h1>
                     <button type="button" class="btn btn-lg">Work with us</button>
                 </div>
             </div>
@@ -66,14 +71,18 @@
         </section>
         <section class="team theme3">
             <div class="container-lg text-center">
-                <h2>Meet our beautiful team</h2>
-                <p>We are a small team of developers and designers, who help brands with big ideas.</p>
+                <div class="wrapper">
+                    <h2>Meet our beautiful team</h2>
+                    <p>We are a small team of developers and designers, who help brands with big ideas.</p>
+                </div>
                 <div class="team__tiles">
                     <div class="tile">
-                        <img src="http://placekitten.com/200/200" alt="">
-                        <h3>Anne Hathaway</h3>
-                        <span>CEO / Marketing Guru</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="content">
+                            <img src="http://placekitten.com/200/200" alt="">
+                            <h3>Anne Hathaway</h3>
+                            <span>CEO / Marketing Guru</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                         <div class="icons">
                             <img src="/public/assets/icons/Fb.png" alt="">
                             <img src="/public/assets/icons/Twitter.png" alt="">
@@ -82,10 +91,12 @@
                         </div>
                     </div>
                     <div class="tile">
-                        <img src="http://placekitten.com/200/200" alt="">
-                        <h3>Kate Upton</h3>
-                        <span>Creative Director</span>
-                        <p>Corrupti ullam sint temporibus dolores porro eaque odit consequuntur unde nostrum repellendus.</p>
+                        <div class="content">
+                            <img src="http://placekitten.com/200/200" alt="">
+                            <h3>Kate Upton</h3>
+                            <span>Creative Director</span>
+                            <p>Corrupti ullam sint temporibus dolores porro eaque odit consequuntur unde nostrum repellendus.</p>
+                        </div>
                         <div class="icons">
                             <img src="/public/assets/icons/Twitter.png" alt="">
                             <img src="/public/assets/icons/LinkedIn.png" alt="">
@@ -93,10 +104,12 @@
                         </div>
                     </div>
                     <div class="tile">
-                        <img src="http://placekitten.com/200/200" alt="">
-                        <h3>Olivia Wilde</h3>
-                        <span>Lead Designer</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="content">
+                            <img src="http://placekitten.com/200/200" alt="">
+                            <h3>Olivia Wilde</h3>
+                            <span>Lead Designer</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                         <div class="icons">
                             <img src="/public/assets/icons/Fb.png" alt="">
                             <img src="/public/assets/icons/Twitter.png" alt="">
@@ -105,10 +118,12 @@
                         </div>
                     </div>
                     <div class="tile">
-                        <img src="http://placekitten.com/200/200" alt="">
-                        <h3>Ashley Greene</h3>
-                        <span>SEO / Developer</span>
-                        <p>Corrupti ullam sint temporibus dolores porro eaque odit consequuntur unde nostrum repellendus.</p>
+                        <div class="content">
+                            <img src="http://placekitten.com/200/200" alt="">
+                            <h3>Ashley Greene</h3>
+                            <span>SEO / Developer</span>
+                            <p>Corrupti ullam sint temporibus dolores porro eaque odit consequuntur unde nostrum repellendus.</p>
+                        </div>
                         <div class="icons">
                             <img src="/public/assets/icons/Fb.png" alt="">
                             <img src="/public/assets/icons/Twitter.png" alt="">
@@ -118,22 +133,88 @@
                 </div>
             </div> 
         </section>
-        <!-- <section class="skills">
+        <section class="skills theme6">
             <div class="container-lg text-center">
                 <div class="wrapper">
                     <h2>We got skills!</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quod id, non facere voluptas, ipsam nisi accusamus error porro blanditiis doloremque veritatis.</p>
                 </div>
                 <div class="skills__tiles">
-                    <div class="tile"></div>
-                    <div class="tile"></div>
-                    <div class="tile"></div>
-                    <div class="tile"></div>
+                    <div class="tile">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle circle--grey"
+                              stroke-dasharray="100, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle circle--blue"
+                              stroke-dasharray="90, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="50%" y="52.5%" dominant-baseline="middle" text-anchor="middle" class="percentage">90%</text>
+                        </svg>
+                        <h3>Web design</h3>
+                    </div>
+                    <div class="tile">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle circle--grey"
+                              stroke-dasharray="100, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle circle--pink"
+                              stroke-dasharray="75, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="50%" y="52.5%" dominant-baseline="middle" text-anchor="middle" class="percentage">75%</text>
+                        </svg>
+                        <h3>HTML / CSS</h3>
+                    </div>
+                    <div class="tile"><svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle circle--grey"
+                              stroke-dasharray="100, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                        <path class="circle circle--green"
+                          stroke-dasharray="70, 100"
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="50%" y="52.5%" dominant-baseline="middle" text-anchor="middle" class="percentage">70%</text>
+                    </svg>
+                    <h3>Graphic design</h3></div>
+                    <div class="tile">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle circle--grey"
+                              stroke-dasharray="100, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle circle--orange"
+                              stroke-dasharray="85, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="50%" y="52.5%" dominant-baseline="middle" text-anchor="middle" class="percentage">85%</text>
+                        </svg>
+                        <h3>HTML / CSS</h3>
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="portfolio theme4">
-            <div class="container text-center">
+            <div class="container-lg text-center">
                 <div class="wrapper">
                     <h2>Our Portfolio</h2>
                     <span>Perspiciatis illo iusto illum quam delectus rerum, velit autem molestiae, magnam laboriosam quae possimus quas minus?</span>
@@ -141,36 +222,72 @@
                 <div class="portfolio__container">
                     <nav class="portfolio__buttons d-flex justify-content-center">
                         <ul class="nav list-unstyled justify-content-center">
-                            <li class="nav-item"><a class="nav-link" href="#">ALL</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">ALL</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">WEB</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">APPS</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">ICONS</a></li>
                         </ul>
                     </nav>
-                    <div class="portfolio__tiles">
+                    <div class="portfolio__tiles d-flex flex-wrap">
                         <div class="tile">
-                            <img src="" alt="">
-                            <h3></h3>
+                            <img src="/public/assets/icons/2020-02-13 18_02_08-Window.png" alt="">
+                            <h3>Isometric perspective moc-up</h3>
                         </div>
                         <div class="tile">
-                            <img src="" alt="">
-                            <h3></h3>
+                            <img src="/public/assets/icons/2020-02-13 18_01_30-Window.png" alt="">
+                            <h3>Time zone API UI</h3>
                         </div>
                         <div class="tile">
-                            <img src="" alt="">
-                            <h3></h3>
+                            <img src="/public/assets/icons/2020-02-13 18_02_33-Window.png" alt="">
+                            <h3>Viro Media Players UI</h3>
                         </div>
                         <div class="tile">
-                            <img src="" alt="">
-                            <h3></h3>
+                            <img src="/public/assets/icons/2020-02-13 18_02_49-Window.png" alt="">
+                            <h3>Blog / Magazine UI Kit</h3>
                         </div>
                     </div>
                 </div>
+                <button type="button" class="btn btn-lg">Load more projects</button>
             </div>
         </section>
-        <section class="comments"></section><!--optional-->
-        <section class="contact"></section>
+        <!-- <section class="comments"></section> -->
+        <section class="contact theme5">
+            <div class="container-lg text-center">
+                <div class="wrapper">
+                    <h2>Get in touch</h2>
+                    <p>1600 Pensyllvania Ave NW, Washington, DC 20500, United States of America. Tel: (111) 111-1111</p>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <div class="form-row form-group">
+                            <div class="col">
+                            <input type="text" class="form-control required" placeholder="Your Name*">
+                            </div>
+                            <div class="col">
+                            <input type="email" class="form-control required" placeholder="Your Email*">
+                            </div>
+                        </div>
+                        <textarea class="form-control required" id="exampleFormControlTextarea1" rows="5" placeholder="Your Message*"></textarea>
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-lg">Send message</button>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container-lg">
+            <nav class="bottom-nav">
+                <ul class="nav list-unstyled justify-content-between">
+                    <li class="nav-item"><a class="nav-link" href="#">Facebook</a></li>
+                    <li class="nav-item"><a class="nav-link colored" href="#">Twitter</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Google</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LinkedIn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Behance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dribble</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GinHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

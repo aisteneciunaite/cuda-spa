@@ -5,9 +5,27 @@
     .btn {
         background-color: $acc;
         border-color: $brdr;
-        color: $text;
+        color:white;
+        &:hover {
+            color:white;
+        }
     }
     h2:after {
         border-color: $primary-dark;
+    }
+
+    input, textarea {
+        background-color: $primary-dark;
+        border: none;
+        color: white;
+        &::placeholder {
+            color: white;
+            // font-family: 'Roboto', sans-serif;
+        }
+        &:focus{
+            background-color: $primary-dark;
+            outline: none;
+            color: white;
+        }
     }
 }

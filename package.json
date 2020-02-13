@@ -8,6 +8,10 @@
     "build": "webpack",
     "watch": "webpack --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aisteneciunaite/cuda-spa.git"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
