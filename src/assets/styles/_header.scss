@@ -1,0 +1,11 @@
+
+
+.top-nav {
+
+    .nav-link{
+        text-transform: uppercase;
+        border-radius: 5px;
+        &:hover {background-color: $color1-drk;}
+    }
+}
+

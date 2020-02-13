@@ -1,0 +1,148 @@
+a {
+  color: inherit; }
+  a:hover {
+    color: inherit; }
+
+button {
+  color: inherit; }
+
+section {
+  padding: 4rem; }
+
+.wrapper {
+  width: 80%;
+  min-width: 300px;
+  margin: 0 auto; }
+
+.light-text {
+  color: white; }
+
+.dark-text {
+  color: black; }
+
+.theme1 {
+  background-color: #854f9c;
+  color: white; }
+  .theme1 .btn {
+    background-color: #ec7c4b;
+    border-color: #c86940;
+    color: white; }
+  .theme1 h2:after {
+    border-color: #633a78; }
+
+.theme2 {
+  background-color: #17c2a2;
+  color: white; }
+  .theme2 .btn {
+    background-color: #854f9c;
+    border-color: #633a78;
+    color: white; }
+  .theme2 h2:after {
+    border-color: #11a58a; }
+
+.theme3 {
+  background-color: #e7f1f8;
+  color: #3c4761; }
+  .theme3 .btn {
+    background-color: pink;
+    border-color: purple;
+    color: #3c4761; }
+  .theme3 h2:after {
+    border-color: #c8d9e5; }
+
+.theme4 {
+  background-color: #ffdd99;
+  color: #393939; }
+  .theme4 .btn {
+    background-color: #19c1a2;
+    border-color: #13a48a;
+    color: #393939; }
+  .theme4 h2:after {
+    border-color: #e5c37f; }
+  .theme4 .nav-link {
+    background-color: #e5c37f;
+    text-transform: uppercase;
+    border-radius: 5px; }
+
+.services__tiles {
+  display: flex;
+  position: relative; }
+  .services__tiles .tile {
+    flex: 1 1 25%;
+    z-index: 2;
+    padding: 1em; }
+  .services__tiles .bkg-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #854f9c; }
+
+.team__tiles {
+  display: flex; }
+  .team__tiles .tile {
+    position: relative;
+    padding: 1em;
+    flex: 1 1 25%; }
+    .team__tiles .tile img {
+      border-radius: 50%;
+      max-width: 100%; }
+    .team__tiles .tile .icons {
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-evenly; }
+    .team__tiles .tile span {
+      color: #59c4eb; }
+
+.nav-item {
+  flex-grow: 1;
+  margin: .5em; }
+
+@media (max-width: 900px) {
+  section {
+    padding: 2em; }
+  .team__tiles {
+    flex-wrap: wrap; }
+  .services__tiles {
+    flex-wrap: wrap; }
+  .tile {
+    min-width: 300px; } }
+
+.portfolio .nav-list {
+  width: 40%; }
+
+.top-nav .nav-link {
+  text-transform: uppercase;
+  border-radius: 5px; }
+  .top-nav .nav-link:hover {
+    background-color: #633a78; }
+
+.btn {
+  text-transform: uppercase;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  margin: 1rem; }
+
+.btn-lg {
+  width: 280px;
+  padding: .8em; }
+
+h2 {
+  padding-bottom: 1rem;
+  position: relative;
+  text-transform: uppercase; }
+  h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4rem;
+    border-style: solid;
+    border-width: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto; }
+
